@@ -1,0 +1,24 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+    border: 2px solid #DCF380;
+    background-color: #B9CE71;
+    margin-bottom: 10px;
+    padding: 19px;
+    border-radius: 10px;
+}
+img {
+    width: 6%;
+}

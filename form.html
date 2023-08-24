@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form action="">
+    <fieldset>
+        <style> 
+        </style>
+       <p>
+        <h4>Step 1: Your details</h4>
+      </p>
+      <fieldset id="step1">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" style="margin-left: 80px;" name="name" placeholder="First and last name"  required onchange="checkName()">
+      </p>
+
+      <p>
+        <label for="email">Email</label>
+        <input type="email" style="margin-left: 79px;" name="email" placeholder="example@example.uz">
+      </p>
+
+      <p>
+        <label for="phone">Phone</label>
+        <input type="number" style="margin-left: 76px;" name="phone" placeholder="+998991234567" maxlength="13">
+      </p>
+    </fieldset>
+
+    
+  
+
+      <p>
+        <h4>Step 2: Delivery address</h4>
+      </p>
+      <fieldset>
+      <p>
+        Address <textarea cols="25" rows="5" style="margin-left: 80px; "></textarea>
+      </p>
+
+      <p>
+        <label for="postcode">Postcode</label>
+        <input type="number" style="margin-left: 74px;" name="postcode" >
+      </p>
+
+      <p>
+        <label for="country">Country</label>
+        <input type="text" style="margin-left: 80px;" name="country">
+      </p>
+    </fieldset>
+
+
+   
+      <p>
+        <h4>Step 3: Card details</h4>
+      </p>
+      <fieldset>
+      <p>
+        Card Type <br>
+        <!-- <label for="visa">Card type</label> -->
+        <input type="radio" style="margin-left: 10px" name="visa"><img src="https://logos-world.net/wp-content/uploads/2020/05/Visa-Logo-700x394.png" alt="visa"> Visa
+        <input type="radio" style="margin-left: 25px" name="visa"><img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/04/10121846/am_amex_06.jpg" alt="amex"> AmEx
+        <input type="radio" style="margin-left: 25px" name="visa"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1158px-Mastercard-logo.svg.png?20210817144358" alt="mastercard"> Mastercard
+      </p>
+
+      <p>
+        <label for="cardnumber">Card number</label>
+        <input type="number" style="margin-left: 50px;" name="cardnumber" >
+      </p>
+
+      <p>
+        <label for="securitycode">Security code</label>
+        <input type="number" style="margin-left: 47px;" name="securitycode" >
+      </p>
+
+      <p>
+        <label for="name">Name on card</label>
+        <input type="text" style="margin-left: 44px;" name="name" >
+      </p>
+    </fieldset>
+
+      
+
+      <input type="submit">
+
+
+    </fieldset>
+  </form>
+
+  <script>
+    function checkName() {
+      var input_val = document.getElementById('name').value;
+      if (input_val.includes(' ')) {
+        alert('PROBEL yozilmasin');
+        document.getElementById('name').value = ''
+      }
+    }
+  </script>
+</body>
+</html>
